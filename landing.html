@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('The%20World%20showing%20countries%20on%20a%20black%20background_.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff; /
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-right: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            padding: 0 2rem;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            max-width: 30rem;
+        }
+
+        .hero button {
+            padding: 0.5rem 2rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 0.2rem;
+            cursor: pointer;
+        }
+
+        .destinations, .activities {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 4rem 0;
+        }
+
+        .destinations h2, .activities h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        .destination, .activity {
+            flex-basis: calc(33.33% - 2rem);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1rem;
+            background-color: #fff;
+            color: #000; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 2rem;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .destination:hover, .activity:hover {
+            transform: translateY(-5px);
+        }
+
+        .destination img, .activity img {
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .destination h3, .activity h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .destination p, .activity p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            max-width: 20rem;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="home" class="hero">
+        <h1>Explore the World</h1>
+        <p>Discover new places and embark on amazing adventures with us.</p>
+        <button onclick="location.href='#destinations'">Get Started</button>
+    </div>
+    <section id="destinations" class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination">
+            <img src="newyork.jpeg" alt="Destination 1">
+            <h3>NEW YORK</h3>
+            <p>Experience the beauty and culture of this amazing place.</p>
+        </div>
+        <div class="destination">
+            <img src="paris.jpeg" alt="Destination 2">
+            <h3>PARIS</h3>
+            <p>Enjoy the stunning landscapes and vibrant cities.</p>
+        </div>
+        <div class="destination">
+            <img src="tokoyo.jpeg" alt="Destination 3">
+            <h3>TOKOYO</h3>
+            <p>Explore the rich history and delicious cuisine.</p>
+        </div>
+    </section>
+    <section id="activities" class="activities">
+        <h2>Top Activities</h2>
+        <div class="activity">
+            <img src="hiking.jpg" alt="Activity 1">
+            <h3>HIKING</h3>
+            <p>Adventure awaits with this thrilling experience.</p>
+        </div>
+        <div class="activity">
+            <img src="food tour.jpeg" alt="Activity 2">
+            <h3>FOOD TOUR</h3>
+            <p>Relax and unwind with this calming activity.</p>
+        </div>
+        <div class="activity">
+            <img src="scuba diving.jpeg" alt="Activity 3">
+            <h3>SCUBA DIVING</h3>
+            <p>Learn something new with this fascinating workshop.</p>
+        </div>
+    </section>
+    <footer id="contact">
+        <p>Contact us at: <a href="mailto:info@travelwebsite.com" style="color: #fff;">info@travelwebsite.com</a></p>
+        <p>Phone: +91 994 951 2392</p>
+        <p>Phone: +91 814 213 8739</p>
+    </footer>
+</body>
+</html>
